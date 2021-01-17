@@ -97,8 +97,6 @@ def process_report(tr):
         chronicler_name="ReachOut",
     )
 
-    print(data)
-
     tab_incidents.upsert(data, ["rg_id"])
 
     for x in sources:
